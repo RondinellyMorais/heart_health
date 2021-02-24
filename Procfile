@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run Heart-care-app.py
+web: sh setup.sh && streamlit run Heart-care-apps.py
