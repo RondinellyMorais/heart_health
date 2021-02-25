@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 from sklearn import datasets
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 
 st.write("""
 # Heart sick Prediction App
@@ -52,7 +52,7 @@ else:
         return features
     input_df = user_input_features()
 
-hert = pd.read_csv('heart_care.csv')
+hert = pd.read_csv('heart.csv')
 herts = hert.drop(columns=['cardio'])
 df = pd.concat([input_df, herts],axis=0)
 
